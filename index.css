@@ -1,0 +1,88 @@
+
+
+
+body {
+  background-color: #a2b897;
+  font-family: "Shantell Sans", cursive;
+}
+
+.img_logo{
+  margin-top:0%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+h1 {
+  text-align: center;
+  color: #696D7D;
+  font-size: 30px;
+  width:fit-content
+}
+
+.prompt {
+  background-color: #CDC6A5;
+  text-align: center;
+  color: #6F9283;
+  margin: 20px;
+  padding: 20px;
+  width: fit-content;
+}
+
+.p2 {
+  background-color: #CDC6A5;
+  text-align: center;
+  color: #6F9283;
+}
+
+
+
+
+/* FONTS */
+
+.shantell-sans> {
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "BNCE" 0,
+    "INFM" 0,
+    "SPAC" 0;
+}
+
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
