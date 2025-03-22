@@ -1,21 +1,17 @@
-
-
-
 body {
   background-color: #a2b897;
   font-family: "Shantell Sans", cursive;
 }
-
 .img_logo{
-  margin-top:0%;
-  margin-right: 25%;
-  margin-left: 25%;
+  margin-top:2%;
+  width: 400px;
+  object-fit: cover; 
 }
 
 h1 {
   text-align: center;
-  color: #696D7D;
-  font-size: 30px;
+  color: #FEFAE0;
+  font-size: xx-large;
   width:fit-content
 }
 
@@ -34,7 +30,30 @@ h1 {
   color: #6F9283;
 }
 
+#firstDivSubject, #firstCheckbox,#firstAddCheckBoxBtn {
+  visibility: hidden;
+}
 
+.SubjectTimer{
+  text-align: center;
+  background-color: #FEFAE0;
+  display: inline-block;
+  margin: 20px;
+  width: 250px;
+  height: 250px;
+  font-size: 30px;
+}
+
+.SubjectTimerName{
+  text-align: center;
+  font-size: medium;
+}
+
+.Timers{
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-direction: column; 
+}
 
 
 /* FONTS */
