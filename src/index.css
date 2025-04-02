@@ -30,8 +30,8 @@ h1 {
   color: #6F9283;
 }
 
-#firstDivSubject, #firstCheckbox,#firstAddCheckBoxBtn {
-  visibility: hidden;
+#firstDivSubject, #firstCheckbox, #btn_firstAddCheckBox, #firstSubjectTimer,#div_FirstToDoList {
+  display: none;
 }
 
 .SubjectTimer{
@@ -44,15 +44,22 @@ h1 {
   font-size: 30px;
 }
 
+
+
 .SubjectTimerName{
   text-align: center;
   font-size: medium;
 }
 
+.ToDoList{
+  width: 80%;
+  display: flex;
+  overflow: auto;
+  display: inline-block;
+}
+
 .Timers{
-  margin-left: 10%;
-  margin-right: 10%;
-  flex-direction: column; 
+  display: inline-block;
 }
 
 

@@ -16,5 +16,9 @@ export class SubjectManager{
         }
     }
 
+    static addCheckBoxInToDoList(subjectTimer){
+        subjectTimer.addCheckBoxInToDoList();
+    }
+
     static getSubjects(){return this.subjects;}
 }
