@@ -6,10 +6,15 @@ body {
   margin-top:2%;
   width: 400px;
   object-fit: cover; 
+  margin-top:2%;
+  width: 400px;
+  object-fit: cover; 
 }
 
 h1 {
   text-align: center;
+  color: #FEFAE0;
+  font-size: xx-large;
   color: #FEFAE0;
   font-size: xx-large;
   width:fit-content
