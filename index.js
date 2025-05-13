@@ -7,6 +7,7 @@ var submitSubject = document.getElementById("submitSubject");
 document.addEventListener("DOMContentLoaded", () => {
     submitSubject.addEventListener("click", function() {
         SubjectManager.addSubject(subjectSelected.textContent);
-        console.log(SubjectManager.getSubjects());
+        console.log("Subject added: " + subjectSelected.textContent);
+        console.log("All subjects: " + SubjectManager.getSubjects());
     });
 });
