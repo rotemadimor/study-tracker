@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="index.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-    </style>       
-<head>
-    <title>Study Buddy</title>
-    <link id="tabLogo" rel="icon" type="image/x-icon" href="media\logo_pic.png">
-</head>
+        <head>
+            <link rel="stylesheet" href="index.css">
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+            </style>       
 
-<body>
+            <title>Study Buddy</title>
+            <link id="tabLogo" rel="icon" type="image/x-icon" href="media\logo_pic.png">
+        </head>
+    <body>
+        <img class="img_logo" src="media/logo.png" alt="logo">
+        <h1 id="aboutSite">Welcome to Study Buddy - Track your study sessions effectively!</h1>
 
-<img class="img_logo" src="media/logo.png" alt="logo">
-<h1 id="aboutSite">Welcome to Study Buddy - Track your study sessions effectively!</h1>
-
-<div class="prompt" >
-    <h2>Pick a Subject</h2>
-    <div id="subjectChosen" contenteditable="true">enter a new subject</div>
-    <button id="submitSubject">submit</button>
-</div>
-<div class="Timers">
-    <div class="FirstSubjectTimer" id="firstDivSubject">
-        <h3 class="SubjectTimerName"></h3>
-        <div class="ToDoList">
-            <input type="checkbox" id="firstCheckBox">
-            <button id="firstAddCheckBoxBtn">add a checkbox</button>
+        <div class="prompt" >
+            <h2>Pick a Subject</h2>
+            <div id="subjectChosen" contenteditable="true">enter a new subject</div>
+            <button id="submitSubject">submit</button>
         </div>
-    </div>
-</div>
-<script type="module" src="index.js" defer></script>
-</body>
+        <div class="Timers">
+            <div class="FirstSubjectTimer" id="firstDivSubject">
+                <h3 class="SubjectTimerName"></h3>
+                <div class="ToDoList">
+                    <input type="checkbox" id="firstCheckBox">
+                    <button id="firstAddCheckBoxBtn">add a checkbox</button>
+                </div>
+            </div>
+        </div>
+    <script type="module" src="index.js" defer></script>
+    </body>
 </html>

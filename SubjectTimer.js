@@ -1,4 +1,4 @@
-import { ToDoList } from "./ToDoList";
+import { ToDoList } from "./ToDoList.js";
 
 export class SubjectTimer{
     subjectName = "subject";
@@ -10,24 +10,30 @@ export class SubjectTimer{
         this.subjectName = subjectName;
         this.divColor ="#FEFAE0";
         this.timeSpentOnSubject = 0;
-        var timersContainer = document.querySelector(".Timers");
-        
-        var newSubjectTimerDiv = document.createElement("div");
-        newSubjectTimerDiv.className = "SubjectTimer";
-        newSubjectTimerDiv.style.backgroundColor = this.divColor;
-
-        var title = document.createElement("h3");
-        title.className = "SubjectTimerName";
-        title.textContent = this.subjectName;
-
-        var firstCheckbox = document.createElement("input");
-        firstCheckbox.type = "checkbox";
-
-        var newDivToDoList = new ToDoList();
-
-        timersContainer.append(newSubjectTimerDiv);
-        newSubjectTimerDiv.appendChild(title);
-        newSubjectTimerDiv.append(newDivToDoList);
+        const timersContainer = document.querySelector(".Timers");
+            if (!timersContainer) {
+                console.error("Timers container not found in the DOM.");
+                return;
+            }
+    
+            const subjectDiv = document.createElement('div');
+            subjectDiv.classList.add('SubjectTimer');
+            subjectDiv.innerHTML = `
+                <h3 class="SubjectTimerName">${subjectName}</h3>
+                <div class="ToDoList">
+                    <button class="addCheckBoxBtn">Add a checkbox</button>
+                </div>
+            `;
+    
+            // Add event listener for dynamically adding checkboxes
+            subjectDiv.querySelector('.addCheckBoxBtn').addEventListener('click', () => {
+                const toDoList = subjectDiv.querySelector('.ToDoList');
+                const newCheckbox = document.createElement('input');
+                newCheckbox.type = 'checkbox';
+                toDoList.appendChild(newCheckbox);
+            });
+    
+            timersContainer.appendChild(subjectDiv);
     }
 
     setDivColor(newColor){this.divColor = newColor;}
