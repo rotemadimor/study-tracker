@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
         <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <link rel="stylesheet" href="index.css">
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -8,25 +10,26 @@
 
             <title>Study Buddy</title>
             <link id="tabLogo" rel="icon" type="image/x-icon" href="media\logo_pic.png">
+            <link rel="stylesheet" href="index.css">
         </head>
     <body>
         <img class="img_logo" src="media/logo.png" alt="logo">
         <h1 id="aboutSite">Welcome to Study Buddy - Track your study sessions effectively!</h1>
+        <h3>Study Buddy is a simple web application designed to help you track your study sessions. You can create subjects, add checkboxes for tasks, and manage your time efficiently.</p>
+        <h3>Enjoy your study sessions with Study Buddy!</p>
 
         <div class="prompt" >
             <h2>Pick a Subject</h2>
             <div id="subjectChosen" contenteditable="true">enter a new subject</div>
-            <button id="submitSubject">submit</button>
+            <button id="submitSubject" onclick="addToDoContainer()">➕ Add New To-Do Container</button>
         </div>
-        <div class="Timers">
-            <div class="FirstSubjectTimer" id="firstDivSubject">
-                <h3 class="SubjectTimerName"></h3>
-                <div class="ToDoList">
-                    <input type="checkbox" id="firstCheckBox">
-                    <button id="firstAddCheckBoxBtn">add a checkbox</button>
-                </div>
-            </div>
-        </div>
-    <script type="module" src="index.js" defer></script>
+
+        <h2>To-Do Containers</h2>
+
+
+        <div id="containersArea"></div>
+
+
+    <script src="index.js"></script>
     </body>
 </html>

@@ -21,11 +21,14 @@ h1 {
 }
 
 .prompt {
-  background-color: #CDC6A5;
+  background-color: #ffffff;
   text-align: center;
   color: #6F9283;
   margin: 20px;
   padding: 20px;
+  border: 2px solid #a9a9a9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   width: fit-content;
 }
 
@@ -35,45 +38,35 @@ h1 {
   color: #6F9283;
 }
 
-#firstDivSubject, #firstCheckbox, #btn_firstAddCheckBox, #firstSubjectTimer,#div_FirstToDoList {
-  display: none;
-}
-
-.SubjectTimer{
-  background-color: #FEFAE0;
-  width: 90vw;
-  max-width: 300px;
-  height: 300px;
-  padding: 10px;
-  box-sizing: border-box;
-  font-size: 16px;
-  border-radius: 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  overflow: hidden;
+#containersArea {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap; 
 }
 
-.SubjectTimerName{
-  text-align: center;
-  font-size: medium;
+.container {
+  width: 100%;             /* full width of parent */
+  max-width: 500px;
+  border: 2px solid #d6d7da;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  width: fit-content;
 }
 
-.ToDoList{
-  width: 80%;
-  flex: 1;
-  display: flex;
-  overflow-y: auto;
-  display: inline-block;
-  max-height:100%;
-  box-sizing: border-box;
+.task-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-.Timers{
-  display: inline-block;
-}
 
+.task {
+  margin-bottom: 5px;
+}
 
 /* FONTS */
 
